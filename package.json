@@ -4,8 +4,8 @@
   "description": "pure javascript site constructor",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "serve": "webpack-dev-server --mode development"
+    "build": "parcel build ./src/index.html --no-source-maps",
+    "serve": "parcel ./src/index.html -p 4200 --open"
   },
   "keywords": [
     "js",
@@ -14,11 +14,6 @@
   "author": "Ann Barmina <annabarmina347@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "css-loader": "^4.2.1",
-    "html-webpack-plugin": "^4.3.0",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12",
-    "webpack-dev-server": "^3.11.0"
+    "parcel-bundler": "^1.12.4"
   }
 }
